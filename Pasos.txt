@@ -1,0 +1,52 @@
+Pasos para crear un proyecto Vite con React y configurar Tailwind CSS, Framer Motion y Bootstrap Icons
+
+1️⃣ Crear el proyecto con Vite
+
+npm create vite@latest
+
+2️⃣ Entrar en la carpeta del proyecto
+
+cd nombre-del-proyecto
+
+3️⃣ Instalar dependencias
+
+npm install
+
+4️⃣ Instalar Tailwind CSS
+
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+5️⃣ Configurar Tailwind en tailwind.config.js
+
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+6️⃣ Importar Tailwind en src/index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+7️⃣ Instalar Framer Motion (para animaciones)
+
+npm install framer-motion
+
+8️⃣ Instalar Bootstrap Icons
+
+npm install bootstrap-icons
+
+9️⃣ Importar Bootstrap Icons en src/App.jsx
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+🔟 Ejecutar el proyecto
+
+npm run dev
+
+🎉 ¡Listo! Ahora tienes un proyecto React + Vite configurado con Tailwind CSS, Framer Motion y Bootstrap Icons. 🚀
